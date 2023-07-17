@@ -14,6 +14,9 @@
     border: none;
     cursor: pointer;
 }
+.text-light-gray{
+    color: #727272;
+}
 
 * {
     font-family: 'Work Sans', sans-serif;
@@ -69,10 +72,6 @@ nav li a {
     color: #131313;
 }
 
-.banner-description {
-    color: #131313;
-
-}
 .banner img{
     margin-top: 20px;
     width: 100%;
@@ -81,7 +80,7 @@ nav li a {
 /* main styles */
 main{
     max-width: 1400px;
-    margin: 0 auto;
+    margin: 70px auto;
 }
 /* teams styles */
 .teams-container{
@@ -101,7 +100,6 @@ main{
     font-size: 2.8rem;
 }
 .teams-title .quick-list{
-    color: #727272;
     font-weight: 700
 }
 .teams-title .text-features{    
@@ -134,8 +132,13 @@ main{
     header{
         padding: 20px;
     }
-    nav{
+    nav, 
+    .teams-container
+    {
         flex-direction: column;
+    }
+    .teams-img-container{
+        grid-template-columns: 1fr;
     }
     nav>ul {
         justify-content: space-around;
@@ -145,6 +148,9 @@ main{
     nav li{
         margin-left: 0;
     }
+    .teams-content{
+        padding: 0 20px 0px 20px;
+    }
 }
 
 /* tablet or medium devices */
@@ -152,7 +158,9 @@ main{
     header{
         padding: 50px;
     }
-    nav{
+    nav, 
+    .teams-container
+    {
         flex-direction: column;
     }
     nav>ul {
